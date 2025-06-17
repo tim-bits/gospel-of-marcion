@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Gospel of Marcion",
+    "slug": "gom",
+    "version": "1.0.0",
+    "orientation": "default",
+    "scheme": "gom",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/adaptive-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#B6B8B6"
+    },
+    "platforms": ["android", "web"],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#B6B8B6"
+      },
+      "package": "org.gom.gom",
+      "enableDangerousExperimentalLeanBuilds": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/adaptive-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourceslnReleaseBuilds": true,
+            "useLegacyPackaging": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "jsEngine": "hermes"
+  }
+  
+}
